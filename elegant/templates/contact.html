@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div>
+    <img src="{% static 'wallpaper/contactus.jpg' %}" alt="wallpaper_image" style="width:100%; height:500px">
+</div>
+
+
+
+<div class="contact-container">
+    <div class="contact-column">
+        <div class="col-9 col-sm-12 col-md-4">
+            <div class="contact-item">
+                <img src="{% static 'icon/phone.jpg' %}" alt="phone_icon" style="width:100px;height:100px">
+                <p>Phone Number: 047427311878</p>
+            </div>
+            <div class="contact-item">
+                <img src="{% static 'icon/email.png' %}" alt="email_icon" style="width:100px;height:100px">
+                <p>WhatsApp Number: 93876541920</p>
+            </div>
+            <div class="contact-item">
+                <img src="{% static 'icon/whatsapp.jpg' %}" alt="whatsapp_icon" style="width:100px;height:100px">
+                <p>Email: elgantteam@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

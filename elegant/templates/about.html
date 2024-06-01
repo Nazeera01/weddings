@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div style="display: flex; justify-content: space-between;margin-top: 30px;">
+    <div style="flex: 1;margin-right: 20px;">
+        <img src="{% static 'wallpaper/hall.jpg' %}" alt="top-left-image" style="width: 390px; height: 370px;">
+    </div>
+    <div style="flex: 3;">
+        <p style="text-align: justify">Elegant Group is a premier wedding event management company dedicated to crafting unforgettable experiences for couples on their special day. With a team of experienced planners, designers, and coordinators, Elegant Group brings dreams to life with meticulous attention to detail and a passion for creating magical moments.
+
+At Elegant Group, every wedding is treated as a unique masterpiece, reflecting the individuality and love story of each couple. The journey begins with a personalized consultation, where the team listens attentively to the client's vision, preferences, and dreams. From there, a collaborative planning process unfolds, combining creativity, expertise, and seamless execution to bring that vision to reality One of Elegant Group's strengths lies in its comprehensive approach to wedding management. This includes everything from venue selection and decor curation to vendor coordination and timeline management. Their network of trusted partners ensures that every aspect of the wedding is handled with professionalism and excellence, allowing couples to relax and enjoy every moment leading up to and on their special day..</p>
+    </div>
+</div>
+
+<div style="display: flex; justify-content: space-between;margin-top: 30px;">
+    <div style="flex: 3;margin-left: 20px">
+        <p style="text-align: justify">The team at Elegant Group is not just a group of professionals; they are a family of dedicated individuals who share a passion for creating magical moments and turning dreams into reality. Each member brings a unique set of skills, expertise, and creativity to the table, working seamlessly together to ensure that every wedding they handle is a masterpiece of elegance and sophistication.
+
+At the heart of the team are the experienced planners who serve as the guiding force behind every project. They are adept at understanding the client's vision, translating ideas into actionable plans, and orchestrating the entire event with precision and finesse. Their attention to detail and ability to anticipate and address challenges ensure that every aspect of the wedding is meticulously planned and executed flawlessly Working alongside the planners are the talented designers who bring spaces to life with their creativity and artistic flair. From breathtaking floral arrangements to stunning tablescapes and decor elements, these designers transform venues into enchanting settings that reflect the couple's style and personality. Their keen eye for aesthetics and dedication to perfection ensure that every detail is thoughtfully curated to create a cohesive and visually stunning ambiance.</p>
+    </div>
+    <div style="flex: 1;margin-left: 20px">
+        <img src="{% static 'wallpaper/team.jpg' %}" alt="bottom-right-image" style="width: 390px; height: 370px;">
+    </div>
+</div>
+
+{% endblock %}

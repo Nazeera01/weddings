@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+
+<ul>
+    {% for vendor in vendors %}
+        <li>
+            <h2>{{ vendor.name }}</h2>
+            {% if vendor.image %}
+
+                    <img src="{{ vendor.image.url }}" alt="{{ vendor.name }}">
+
+            {% else %}
+
+                    <p>No image available</p>
+
+            {% endif %}
+            <p>Email: {{ vendor.email }}</p>
+            <p>Phone: {{ vendor.phone }}</p>
+            <p>Services: {{ vendor.services }}</p>
+            <p>Availabilities: {{ vendor.availabilities }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+
+
+{% endblock %}
+
+
+
+</body>
+
+
+

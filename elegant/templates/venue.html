@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<ul>
+        {% for venue in venues %}
+            <li>
+                <h2>{{ venue.name }}</h2>
+                {% if venue.image %}
+                    <img src="{{ venue.image.url }}" alt="{{ venue.name }}">
+                {% else %}
+                    <p>No image available</p>
+                {% endif %}
+                <p>Location:{{ venue.location }}</p>
+                <p>Price:{{ venue.price }}</p>
+                <p>{{ venue.capacity }}</p>
+                <p>{{ venue.description}}</p>
+            </li>
+        {% endfor %}
+</ul>
+
+{% endblock %}
